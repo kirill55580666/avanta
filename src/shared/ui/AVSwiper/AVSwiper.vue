@@ -61,5 +61,8 @@ export default defineComponent({
   right: 0;
   bottom: 0;
   top: 0;
+  @media (max-width: 1100px) {
+    width: 100%;
+  }
 }
 </style>

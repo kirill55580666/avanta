@@ -1,4 +1,4 @@
-import { defineComponent, ref, watch } from "vue";
+import { computed, defineComponent, ref, watch } from "vue";
 import AVFormButton from "@/shared/ui/FormButton/FormButton.vue";
 import { useStore } from "vuex";
 
@@ -10,6 +10,8 @@ export default defineComponent({
   setup() {
     const store = useStore();
     const swiperInstance = ref();
+
+    const imgSrc = computed(() => require("@/shared/assets/image/background.png"));
 
     watch(
       () => store.state.swiperInstance,
@@ -24,6 +26,7 @@ export default defineComponent({
 
     return {
       clickHandler,
+      imgSrc,
     };
   },
 });

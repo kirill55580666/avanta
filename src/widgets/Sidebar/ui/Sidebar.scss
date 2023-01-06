@@ -6,6 +6,9 @@
   justify-content: space-between;
   padding: 30px 30px;
   border-right: 2px solid var(--primary-color-pale);
+  @media (max-width: 1100px) {
+    display: none;
+  }
 }
 
 .av-sidebar__links {

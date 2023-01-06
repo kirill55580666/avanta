@@ -1,5 +1,13 @@
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import AVBenefitCard from "@/shared/ui/BenefitCard/BenefitCard.vue";
+import AVArrowButton from "@/shared/ui/ArrowButton/ArrowButton.vue";
+
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+import { Navigation } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 interface IBenefit {
   title: string;
@@ -31,8 +39,7 @@ const benefitsList: IBenefit[] = [
   },
   {
     title: "Повод",
-    description:
-      "не придумали",
+    description: "не придумали",
   },
 ];
 
@@ -40,10 +47,18 @@ export default defineComponent({
   name: "AVBenefitsPage",
   components: {
     AVBenefitCard,
+    AVArrowButton,
+    Swiper,
+    SwiperSlide,
   },
   setup() {
+    const prev = ref(null);
+    const next = ref(null);
     return {
       benefitsList,
+      modules: [Navigation],
+      prev,
+      next,
     };
   },
 });

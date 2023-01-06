@@ -36,6 +36,10 @@ export default defineComponent({
   height: 150px;
   position: relative;
   z-index: 1;
+  @media (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .av-benefit-card__title {
   color: var(--secondary-color);
@@ -55,5 +59,9 @@ export default defineComponent({
   bottom: 0;
   font-size: 250px;
   z-index: -1;
+  @media (max-width: 576px) {
+    left: -75px;
+    bottom: 0;
+  }
 }
 </style>
