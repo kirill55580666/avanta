@@ -1,0 +1,47 @@
+.av-sidebar {
+  height: 100%;
+  width: var(--sidebar-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px;
+  border-right: 2px solid var(--primary-color-pale);
+}
+
+.av-sidebar__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.av-sidebar__link {
+  cursor: pointer;
+  margin: 15px 0;
+  transition: color .3s;
+  user-select: none;
+  &_active {
+    color: var(--secondary-color);
+  }
+}
+
+.av-sidebar__buttons {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+$button_padding: 10px;
+.av-sidebar__button {
+  &_first {
+    margin-left: auto;
+    margin-right: $button_padding;
+  }
+  &_second {
+    margin-right: auto;
+    margin-left: $button_padding;
+  }
+}
+
+.av-sidebar__title {
+  user-select: none;
+  cursor: pointer;
+}

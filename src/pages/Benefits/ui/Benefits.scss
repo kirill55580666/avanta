@@ -1,0 +1,31 @@
+.av-benefits {
+  position: relative;
+}
+
+.av-benefits__title {
+  font-size: 96px;
+  line-height: 1;
+  color: var(--secondary-color);
+  padding-top: 100px;
+  padding-left: 80px;
+}
+
+.av-benefits__wrapper {
+  flex: 1 0 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.av-benefits__cards {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.av-benefits__container {
+  height: calc(100vh - 196px);
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}

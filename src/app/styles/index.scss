@@ -1,0 +1,35 @@
+@import "reset";
+@import "variables/global";
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('AVMagistral', normal, 300, '../../shared/fonts/Magistral-Light.woff2');
+@include font('AVMagistral', normal, 400, '../../shared/fonts/Magistral-Book.woff2');
+@include font('AVMagistral', normal, 500, '../../shared/fonts/Magistral-Medium.woff2');
+@include font('AVMagistral', normal, 700, '../../shared/fonts/Magistral-Bold.woff2');
+
+#app {
+  height: 100vh;
+}
+
+body {
+  font: var(--font-m);
+  font-weight: 500;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  height: 100%;
+}
+
+.av-sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
