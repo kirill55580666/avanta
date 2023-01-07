@@ -3,7 +3,7 @@ import { useStore } from "vuex";
 import AVArrowButton from "@/shared/ui/ArrowButton/ArrowButton.vue";
 import { Directions } from "@/shared/ui/ArrowButton/ArrowButton.vue";
 
-const links: string[] = ["Главная", "Преимущества", "О нас", "Оформи заявку"];
+const links: string[] = ["Главная", "Преимущества", "О нас", "Оформите заявку"];
 
 export default defineComponent({
   name: "AVSidebar",

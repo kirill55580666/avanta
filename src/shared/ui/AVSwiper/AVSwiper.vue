@@ -37,7 +37,7 @@ export default defineComponent({
       type: Array as PropType<any[]>,
     },
   },
-  setup(props) {
+  setup() {
     const swiper = ref();
     const store = useStore();
 
@@ -64,5 +64,8 @@ export default defineComponent({
   @media (max-width: 1100px) {
     width: 100%;
   }
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--secondary-color);
 }
 </style>

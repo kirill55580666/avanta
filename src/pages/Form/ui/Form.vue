@@ -45,8 +45,17 @@
           <p class="av-form__right-block_streets_first">г. Уфа, ул. Коммунистическая, 80 оф. 324</p>
           <p class="av-form__right-block_streets_second">avanta_info@mail.ru</p>
         </div>
-        <a class="av-form__telephone av-form__telephone_first" href="tel:+79991347997">+7 999 134 79 97</a>
-        <a class="av-form__telephone" href="tel:+79273104236">+7 927 310 42 36</a>
+        <a class="av-form__telephone av-form__telephone_first" href="tel:+73472625868"
+          >+7-347-262-58-68</a
+        >
+      </div>
+    </div>
+    <div class="av-form__footer">
+      <div class="av-form__footer_item">
+        <p>avanta_info@mail.ru</p>
+      </div>
+      <div class="av-form__footer_item av-form__footer_telephone">
+        <a href="tel:+73472625868">+7-347-262-58-68</a>
       </div>
     </div>
   </div>
