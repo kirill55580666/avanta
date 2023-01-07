@@ -3,11 +3,7 @@
     <p class="av-form__title">Оставьте заявку</p>
     <div class="av-form__container">
       <div class="av-form__left-block">
-        <form class="av-form__form-block" method="post">
-          <input type="hidden" name="project_name" value="AVANTA" />
-          <input type="hidden" name="admin_email" value="info@avanta-ufa.ru" />
-          <input type="hidden" name="form_subject" value="Заявка" />
-
+        <form ref="refForm" class="av-form__form-block" @submit.prevent="sendEmail">
           <input
             class="av-form__input av-form__form-item"
             :class="{ 'av-form__form-item_focused': isNameInputActive }"
@@ -16,6 +12,8 @@
             placeholder="Ваше имя..."
             @focus="isNameInputActive = true"
             @blur="isNameInputActive = false"
+            v-model="ref1"
+            :disabled="isDisabled"
           />
           <input
             class="av-form__input av-form__form-item"
@@ -25,18 +23,24 @@
             placeholder="Ваш телефон..."
             @focus="isSurnameInputActive = true"
             @blur="isSurnameInputActive = false"
+            v-model="ref2"
+            :disabled="isDisabled"
           />
           <textarea
             :class="{ 'av-form__form-item_focused': isTextareaActive }"
             contenteditable="true"
             class="av-form__textarea av-form__form-item"
             rows="4"
-            name="Message"
+            name="AV-Message"
             placeholder="Есть вопрос?..."
             @focus="isTextareaActive = true"
             @blur="isTextareaActive = false"
+            v-model="ref3"
+            :disabled="isDisabled"
           ></textarea>
-          <AVFormButton class="av-form__button" @click="sendEmail">Отправить</AVFormButton>
+          <AVFormButton :disabled="isDisabled" class="av-form__button">{{
+            textButton
+          }}</AVFormButton>
         </form>
       </div>
       <div class="av-form__right-block">

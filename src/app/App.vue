@@ -5,7 +5,7 @@
 
 <style lang="scss" src="./styles/index.scss" />
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 
 import { AVSidebar } from "@/widgets/Sidebar";
 import AVSwiper from "@/shared/ui/AVSwiper/AVSwiper.vue";
