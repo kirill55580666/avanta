@@ -46,7 +46,9 @@
       <div class="av-form__right-block">
         <div class="av-form__right-block_contacts">Контакты</div>
         <div class="av-form__right-block_streets">
-          <p class="av-form__right-block_streets_first">г. Уфа, ул. Коммунистическая, 80 оф. 324</p>
+          <p class="av-form__right-block_streets_first">
+            г. Уфа, Бульвар Хадии Давлетшиной, 9 к1, офис 403
+          </p>
           <p class="av-form__right-block_streets_second">avanta_info@mail.ru</p>
         </div>
         <a class="av-form__telephone av-form__telephone_first" href="tel:+73472625868"
