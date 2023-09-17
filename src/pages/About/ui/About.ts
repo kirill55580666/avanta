@@ -2,6 +2,7 @@ import { defineComponent } from "vue";
 import AVTicker from "@/shared/ui/Ticker/Ticker.vue";
 
 const words1 = [
+  "PARKER",
   "АО ПО “Элтехника”",
   "АВВ",
   "Schneider Electric",
