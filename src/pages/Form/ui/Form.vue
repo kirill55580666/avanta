@@ -58,7 +58,7 @@
     </div>
     <div class="av-form__footer">
       <div class="av-form__footer_item">
-        <p>avanta_info@mail.ru</p>
+        <p>avanta-dir@mail.ru</p>
       </div>
       <div class="av-form__footer_item av-form__footer_telephone">
         <a href="tel:+73472625868">+7-347-262-58-68</a>
